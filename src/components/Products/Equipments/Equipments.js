@@ -4,7 +4,7 @@ import {Card, ListGroup, ListGroupItem, Button } from 'react-bootstrap';
 
 
 const Equipments = (props) => {
-    const [count, setCount] = useState(initial);
+    const [count, stock, setCount] = useState(Number('initial'));
     return (
         <>
         <Card style={{ width: '18rem' }}>
@@ -17,7 +17,7 @@ const Equipments = (props) => {
                 <ListGroupItem>{props.price}</ListGroupItem>
             </ListGroup>
             <Card.Body>
-                <Button variant="primary" size="sm" onClick={() => (count === initial) ? setCount(count): setCount(count + 1)}>
+                <Button variant="primary" size="sm" onClick={() => (count === 'initial') ? setCount(count): setCount(count + 1)}>
                     +
                     </Button>
                     <Card.Text>0</Card.Text>

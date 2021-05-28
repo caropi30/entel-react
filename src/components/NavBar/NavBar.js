@@ -2,7 +2,7 @@
 import React from 'react';
 import {Navbar, Nav} from 'react-bootstrap';
 import entelLogo from '../../assets/img/entel/entelLogo.png';
-import CartButton from './components/Buttons/CartButton' 
+//import CartButton from './components/Buttons/CartButton' 
 
 const NavBar = (props) =>  {
     return (
@@ -13,11 +13,11 @@ const NavBar = (props) =>  {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-                <Nav.Link href="#home">Equipos</Nav.Link>
-                <Nav.Link href="#link">Accesorios</Nav.Link>
+                <Nav.Link href="#home">{props.home}</Nav.Link>
+                <Nav.Link href="#equipments">{props.equipments}</Nav.Link>
+                <Nav.Link href="#accesories">{props.accesories}</Nav.Link>
             </Nav>
             </Navbar.Collapse>
-            <CartButton/>
         </Navbar>
     )
 };
