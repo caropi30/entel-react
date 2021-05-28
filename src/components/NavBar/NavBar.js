@@ -2,6 +2,7 @@
 import React from 'react';
 import {Navbar, Nav} from 'react-bootstrap';
 import entelLogo from '../../assets/img/entel/entelLogo.png';
+import {Link} from 'react-router-dom';
 //import CartButton from './components/Buttons/CartButton' 
 
 const NavBar = (props) =>  {
@@ -14,7 +15,7 @@ const NavBar = (props) =>  {
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
                 <Nav.Link href="#home">{props.home}</Nav.Link>
-                <Nav.Link href="#equipments">{props.equipments}</Nav.Link>
+                <Nav.Link href="#equipments"><Link></Link></Nav.Link>
                 <Nav.Link href="#accesories">{props.accesories}</Nav.Link>
             </Nav>
             </Navbar.Collapse>

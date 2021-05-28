@@ -20,7 +20,7 @@ const Accesories = (props) => {
                     <Button variant="primary" size="sm" onClick={() => (count === 'initial') ? setCount(count): setCount(count + 1)}>
                         +
                         </Button>
-                    <Card.Text>0</Card.Text>
+                    <Card.Text>{count}</Card.Text>
                     <Button variant="secondary" size="sm" onClick={() => (count !== stock) & (count < stock) ? setCount(count + 1) : setCount(count)}>
                         -
                     </Button>
