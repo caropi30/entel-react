@@ -1,18 +1,10 @@
 //Navbar
-@import './components/NavBar/NavBar';
+@import './scss/Layout/NavBar';
 
-//Shopping Cart
-@import './components/Cart/Cart';
+// itemList
+@import './scss/Layout/itemListContainer';
+@import './scss/Layout/itemListDetail';
 
-//Buttons
-@import './components/Buttons/CartButton/CartButton';
-@import './components/Buttons/AddButton/AddButton';
-@import './components/Buttons/RestButton/RestButton';
-
-
-//Products
-@import './components/Products/Equipments/Equipments';
-@import './components/Products/Accesories/Accesories';
 
 //Utilities, Base, Layout
 @import './scss/Base/Typography';

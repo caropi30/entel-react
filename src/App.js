@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.scss';
 import { BrowserRouter, Route, Switch} from 'react-router-dom';
-import NavBar from './components/NavBar/NavBar';
-import Equipments from './components/Products/Equipments/Equipments';
-import Accesories from './components/Products/Accesories/Accessories';
-import CartButton from './components/Buttons/CartButton/CartButton';
-import Cart from './components/Cart/Cart';
+import NavBar from './components/NavBar';
+import itemCount from './components/ItemCount';
+//import itemListContainer from './components/itemListContainer';
+//import itemListDetail from './components/itemListDetail';
+
 
 function App() {
   return (
@@ -13,20 +13,12 @@ function App() {
       <BrowserRouter>
         <NavBar/>
           <Switch>
-            <Route exact path="/equipments">
-                <Equipments />
-            </Route>
-            <Route exact path="/accesories">
-                <Accesories />
-            </Route>
-            <Route exact path="/cart">
-              <Cart/>
+            <Route exact path="/itemListContainer">
+                <itemListContiner />
             </Route>
           </Switch>
       </BrowserRouter>
-      <CartButton />
-      <Equipments stock='20' initial='1'/>
-      <Accesories stock='20' initial='1'/>
+      <itemCount stock='5' initial='1' />
     </>
   )
 }
