@@ -1,7 +1,7 @@
 //import Navbar from 'react-bootstrap/Navbar';
 import {Navbar, Nav} from 'react-bootstrap';
 //import entelLogo from './img/entel/entelLogo.png';
-import CartWidget from './components/CartWidget';
+import CartWidget from './CartWidget';
 //import itemListContainer from './itemListContainer';
 
 const NavBar = () =>  {
