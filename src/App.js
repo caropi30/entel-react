@@ -18,6 +18,8 @@ function App() {
             </Route>
           </Switch>
       </BrowserRouter>
+      <h1>¡Bienvenido!</h1>
+      <h2>a la Tienda de Equipos Liberados Entel</h2>
       <itemCount stock='5' initial='1' />
     </>
   )

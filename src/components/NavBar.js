@@ -8,11 +8,11 @@ const NavBar = () =>  {
     return (
         <Navbar bg="light" expand="lg">
             <Navbar.Brand href="#home">
-                <img src={entelLogo} alt="Logo Entel"></img>
+                <img src={entelLogo} alt="Logo Entel" style={{ width: '4rem' }}></img>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mr-auto">
+            <Nav className="mr-auto" style={{ textAlign: 'end' }}>
                 <Nav.Link href="#home">Inicio</Nav.Link>
                 <Nav.Link href="#link">Equipos</Nav.Link>
             </Nav>

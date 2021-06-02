@@ -5,7 +5,7 @@ import * as Icon  from 'react-bootstrap-icons';
 const CartWidget = () => {
     return (
         <Button variant="primary" size="lg">
-            <Icon.Cart />
+            <Icon.Cart4 />
         </Button>
     )
 };
