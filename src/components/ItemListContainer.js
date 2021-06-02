@@ -1,11 +1,13 @@
 import React from 'react';
+import ItemList from './ItemListDetail';
 
-
-const ItemListContainer = () => {
+const ItemListContainer = (props) => {
+    console.log(props);
     return (
-        <>
-        </>
-    )
-}
-
-export default ItemListContainer;
+      <>
+        <ItemList />
+      </>
+    );
+  };
+  
+  export default ItemListContainer;
