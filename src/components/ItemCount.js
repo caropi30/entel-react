@@ -7,7 +7,7 @@ function ItemCount({ initial, stock, addOn }) {
   console.log(count);
   return (
     <div>
-      <p> Clickeaste {count} veces </p>
+      <p> Añadiste {count} veces </p>
       <Button variant="primary" size="sm"
         onClick={() =>
           count === initial ? setCount(count) : setCount(count - 1)
