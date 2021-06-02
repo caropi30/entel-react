@@ -1,6 +1,6 @@
 //import Navbar from 'react-bootstrap/Navbar';
 import {Navbar, Nav} from 'react-bootstrap';
-//import entelLogo from './img/entel/entelLogo.png';
+import entelLogo from 'assets/img/entel/entelLogo.png';
 import CartWidget from './CartWidget';
 //import itemListContainer from './itemListContainer';
 
@@ -8,7 +8,7 @@ const NavBar = () =>  {
     return (
         <Navbar bg="light" expand="lg">
             <Navbar.Brand href="#home">
-                {/*<img src={entelLogo} alt="Logo Entel"></img>*/}
+                <img src={entelLogo} alt="Logo Entel"></img>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
